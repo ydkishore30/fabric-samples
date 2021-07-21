@@ -10,6 +10,7 @@ const { Contract } = require('fabric-contract-api');
 
 class AssetTransfer extends Contract {
 
+    // InitLedger insert 6 cars to world state by looping over assets list. 
     async InitLedger(ctx) {
         const assets = [
             {
